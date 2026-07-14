@@ -1,0 +1,56 @@
+# Weather App
+
+A simple and responsive Weather App built with **HTML**, **CSS**, and **JavaScript** that fetches real-time weather data using the **OpenWeatherMap API**.
+
+## Features
+
+- Search weather by city name
+- Current temperature
+- Weather condition
+- Humidity
+- Wind speed
+- Displays city and country
+- Responsive UI
+- Fast API-based weather updates
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- OpenWeatherMap API
+
+## Project Structure
+
+```
+weather-app/
+│
+├── index.html
+├── style.css
+├── script.js
+├── images/
+└── README.md
+```
+
+## API Setup
+
+1. Create a free account at **OpenWeatherMap**.
+2. Generate your API key.
+3. Replace the API key in `script.js`.
+
+```javascript
+const apiKey = "YOUR_API_KEY";
+```
+
+## ▶How to Run
+
+1. Open the project folder.
+2. Open `index.html` in your browser.
+
+No installation is required.
+
+## Example API Request
+
+```text
+https://api.openweathermap.org/data/2.5/weather?q=London&appid=YOUR_API_KEY&units=metric
+```

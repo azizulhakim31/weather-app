@@ -13,7 +13,8 @@ async function checkWeather(city) {
         document.querySelector(".weather").style.display = "none";
     } else {
         var data = await response.json();
-
+        console.log(data);
+        
         const windSpeedMs = data.wind.speed;
         const windSpeedKmh = (windSpeedMs * 3.6).toFixed(1);
 
@@ -22,11 +23,11 @@ async function checkWeather(city) {
         document.querySelector(".humidity").innerHTML = data.main.humidity + " %";
         document.querySelector(".wind").innerHTML = windSpeedKmh + " km/h";
 
-        if (data.weather[0].main == "Clouds") {
-            weatherIcon.src = "/images/cloudy-2.gif"
-        }
-        else if (data.weather[0].main == "Clear") {
+        if (data.weather[0].main == "Clear") {
             weatherIcon.src = "/images/clear.gif"
+        }
+        else if (data.weather[0].main == "Clouds") {
+            weatherIcon.src = "/images/cloudy-2.gif"
         }
         else if (data.weather[0].main == "Rain") {
             weatherIcon.src = "/images/rain.gif"
