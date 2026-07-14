@@ -7,10 +7,9 @@ A simple and responsive Weather App built with **HTML**, **CSS**, and **JavaScri
 - Search weather by city name
 - Current temperature
 - Weather condition
+- Displays city
 - Humidity
 - Wind speed
-- Displays city and country
-- Responsive UI
 - Fast API-based weather updates
 
 ## Technologies Used
@@ -42,7 +41,7 @@ weather-app/
 const apiKey = "YOUR_API_KEY";
 ```
 
-## ▶How to Run
+## How to Run
 
 1. Open the project folder.
 2. Open `index.html` in your browser.
