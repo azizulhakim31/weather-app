@@ -35,11 +35,14 @@ weather-app/
 
 1. Create a free account at **OpenWeatherMap**.
 2. Generate your API key.
-3. Replace the API key in `script.js`.
+3. Create a local file named `config.js` (this file is ignored by Git) and add:
 
 ```javascript
 const apiKey = "YOUR_API_KEY";
+const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 ```
+
+4. Open the project in your browser.
 
 ## How to Run
 
